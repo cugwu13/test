@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.carousel {
+    width: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    transform: translateX(-400px);
+}
+
+.slide-container {
+    display: flex;
+}
+
+.slide-container > img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation > i {
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation > .active {
+    color: grey;
+}
+
+.transition {
+    transition: 0.5s ease-in-out;
+}
